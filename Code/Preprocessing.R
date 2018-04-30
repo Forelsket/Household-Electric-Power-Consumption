@@ -13,9 +13,10 @@ pacman::p_load(dplyr, tidyr, tibble, lubridate, zoo, ggplot2, scales, plyr, shin
                highcharter
 )
 
-setwd("C:/Users/Patty/OneDrive/Documents/Ubiqum/Task 5/Data/")
 
-HHPC<-read.csv("household_power_consumption.txt", sep=";", na.strings="?")
+#setwd("C:/Users/Patty/OneDrive/Documents/Ubiqum/Task 5/Data/")
+
+HHPC<-read.table("household_power_consumption.gz", sep=";", na.strings="?")
 
 as_tibble(HHPC)
 
